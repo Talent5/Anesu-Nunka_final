@@ -1,0 +1,32 @@
+# Keep repository focused on source code and deployment config.
+# Ignore document-style files and generated/system artifacts.
+
+# Office/PDF documents
+*.doc
+*.docx
+*.pdf
+*.ppt
+*.pptx
+
+# Methodology/design writeups in markdown
+Chapter_*.md
+
+# Temporary Office lock files
+~$*
+
+# Python artifacts
+**/__pycache__/
+*.pyc
+
+# Node artifacts
+frontend/node_modules/
+frontend/dist/
+
+# Local environment files
+.env
+backend/.env
+frontend/.env
+
+# Keep readme files tracked
+!README.md
+!**/README.md

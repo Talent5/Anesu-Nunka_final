@@ -1,0 +1,200 @@
+2026-03-11 14:07:24,948 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 14:07:24,949 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 14:07:24,949 [INFO] DSS-API:    Features: 21
+2026-03-11 14:07:25,090 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.49:5000
+2026-03-11 14:07:25,091 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-03-11 14:07:25,122 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 14:07:32,626 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 14:07:32,627 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 14:07:32,627 [INFO] DSS-API:    Features: 21
+2026-03-11 14:07:32,662 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 14:07:32,674 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 14:10:10,251 [INFO] DSS-API: Prediction completed: Risk Tier=2 (P=[0.215, 0.325, 0.460])
+2026-03-11 14:10:10,254 [INFO] werkzeug: 127.0.0.1 - - [11/Mar/2026 14:10:10] "POST /api/predict HTTP/1.1" 200 -
+2026-03-11 14:13:57,468 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\Desktop\\School Projects\\Anesu Nunka_final\\backend\\config.py', reloading
+2026-03-11 14:13:58,734 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 14:14:07,681 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 14:14:07,683 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 14:14:07,683 [INFO] DSS-API:    Features: 21
+2026-03-11 14:14:07,708 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 14:14:07,718 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 14:14:20,910 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\Desktop\\School Projects\\Anesu Nunka_final\\backend\\app.py', reloading
+2026-03-11 14:14:22,440 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 14:14:28,953 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 14:14:28,953 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 14:14:28,953 [INFO] DSS-API:    Features: 21
+2026-03-11 14:14:28,982 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 14:14:28,988 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 14:15:03,447 [INFO] werkzeug: 127.0.0.1 - - [11/Mar/2026 14:15:03] "GET /api/auth/status HTTP/1.1" 200 -
+2026-03-11 14:15:03,466 [INFO] werkzeug: 127.0.0.1 - - [11/Mar/2026 14:15:03] "GET /api/auth/status HTTP/1.1" 200 -
+2026-03-11 14:15:11,867 [INFO] werkzeug: 127.0.0.1 - - [11/Mar/2026 14:15:11] "GET /api/auth/status HTTP/1.1" 200 -
+2026-03-11 14:16:24,571 [INFO] werkzeug: 127.0.0.1 - - [11/Mar/2026 14:16:24] "GET /api/auth/status HTTP/1.1" 200 -
+2026-03-11 14:19:59,370 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\Desktop\\School Projects\\Anesu Nunka_final\\backend\\config.py', reloading
+2026-03-11 14:21:03,310 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 14:21:03,310 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 14:21:03,311 [INFO] DSS-API:    Features: 21
+2026-03-11 14:21:03,359 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.49:5000
+2026-03-11 14:21:03,362 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-03-11 14:21:03,379 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 14:21:08,755 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 14:21:08,756 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 14:21:08,756 [INFO] DSS-API:    Features: 21
+2026-03-11 14:21:08,783 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 14:21:08,790 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 14:21:08,874 [INFO] DSS-API: Admin login successful: admin
+2026-03-11 14:21:08,877 [INFO] werkzeug: 127.0.0.1 - - [11/Mar/2026 14:21:08] "POST /api/auth/login HTTP/1.1" 200 -
+2026-03-11 14:32:13,626 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\AppData\\Roaming\\Python\\Python312\\site-packages\\torch\\cuda\\__init__.py', reloading
+2026-03-11 14:32:14,382 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 14:32:23,154 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 14:32:23,154 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 14:32:23,155 [INFO] DSS-API:    Features: 21
+2026-03-11 14:32:23,191 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 14:32:23,202 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 14:55:27,884 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\_meta_registrations.py', reloading
+2026-03-11 14:55:28,677 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 14:55:38,610 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 14:55:38,610 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 14:55:38,611 [INFO] DSS-API:    Features: 21
+2026-03-11 14:55:38,651 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 14:55:38,663 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 15:06:28,601 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\__init__.py', reloading
+2026-03-11 15:06:29,702 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 15:06:48,013 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 15:06:48,014 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 15:06:48,014 [INFO] DSS-API:    Features: 21
+2026-03-11 15:06:48,045 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 15:06:48,056 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 15:24:57,737 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\AppData\\Roaming\\Python\\Python312\\site-packages\\IPython\\display.py', reloading
+2026-03-11 15:24:57,848 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\AppData\\Roaming\\Python\\Python312\\site-packages\\IPython\\core\\display_functions.py', reloading
+2026-03-11 15:24:59,947 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 15:26:06,648 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 15:26:06,679 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 15:26:06,716 [INFO] DSS-API:    Features: 21
+2026-03-11 15:26:08,182 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 15:26:08,462 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 15:26:09,788 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\AppData\\Roaming\\Python\\Python312\\site-packages\\contourpy\\dechunk.py', reloading
+2026-03-11 15:26:13,127 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 15:26:55,036 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 15:26:55,251 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 15:26:55,435 [INFO] DSS-API:    Features: 21
+2026-03-11 15:26:56,855 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 15:26:56,885 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 15:26:57,290 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\AppData\\Roaming\\Python\\Python312\\site-packages\\lazy_loader\\__init__.py', reloading
+2026-03-11 15:26:59,743 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 15:27:32,665 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 15:27:32,699 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 15:27:32,714 [INFO] DSS-API:    Features: 21
+2026-03-11 15:27:32,895 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 15:27:33,003 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 15:27:33,439 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\AppData\\Roaming\\Python\\Python312\\site-packages\\pystac\\version.py', reloading
+2026-03-11 15:27:35,706 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 15:27:58,041 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 15:27:58,059 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 15:27:58,072 [INFO] DSS-API:    Features: 21
+2026-03-11 15:27:58,389 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 15:27:58,445 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 15:28:00,783 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\AppData\\Roaming\\Python\\Python312\\site-packages\\timm\\models\\inception_v3.py', reloading
+2026-03-11 15:28:00,842 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\AppData\\Roaming\\Python\\Python312\\site-packages\\timm\\models\\inception_v4.py', reloading
+2026-03-11 15:28:03,831 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 15:28:44,033 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 15:28:44,160 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 15:28:44,223 [INFO] DSS-API:    Features: 21
+2026-03-11 15:28:45,562 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 15:28:45,591 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 15:28:45,975 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\AppData\\Roaming\\Python\\Python312\\site-packages\\transformers\\models\\bert_generation\\tokenization_bert_generation.py', reloading
+2026-03-11 15:28:50,079 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 15:29:15,340 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 15:29:15,430 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 15:29:15,498 [INFO] DSS-API:    Features: 21
+2026-03-11 15:29:18,570 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 15:29:18,638 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 15:29:19,791 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\AppData\\Roaming\\Python\\Python312\\site-packages\\transformers\\models\\dinov2\\modeling_dinov2.py', reloading
+2026-03-11 15:29:21,557 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 15:29:44,502 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 15:29:44,504 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 15:29:44,508 [INFO] DSS-API:    Features: 21
+2026-03-11 15:29:44,572 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 15:29:44,592 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 15:29:44,862 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\AppData\\Roaming\\Python\\Python312\\site-packages\\transformers\\models\\minimax\\configuration_minimax.py', reloading
+2026-03-11 15:29:45,916 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 15:30:06,238 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 15:30:06,258 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 15:30:06,273 [INFO] DSS-API:    Features: 21
+2026-03-11 15:30:06,736 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 15:30:06,753 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 15:30:07,011 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\AppData\\Roaming\\Python\\Python312\\site-packages\\transformers\\models\\starcoder2\\configuration_starcoder2.py', reloading
+2026-03-11 15:30:08,060 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 15:30:32,655 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 15:30:32,668 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 15:30:32,674 [INFO] DSS-API:    Features: 21
+2026-03-11 15:30:32,932 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 15:30:32,955 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 15:30:33,278 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\AppData\\Roaming\\Python\\Python312\\site-packages\\xarray\\core\\dataset.py', reloading
+2026-03-11 15:30:34,458 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 15:30:53,387 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 15:30:53,388 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 15:30:53,390 [INFO] DSS-API:    Features: 21
+2026-03-11 15:30:53,449 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 15:30:53,466 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 15:34:47,851 [INFO] werkzeug:  * Detected change in 'C:\\Python312\\Lib\\typing.py', reloading
+2026-03-11 15:34:49,201 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 15:35:03,182 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 15:35:03,206 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 15:35:03,232 [INFO] DSS-API:    Features: 21
+2026-03-11 15:35:03,331 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 15:35:03,357 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 15:36:37,499 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\AppData\\Roaming\\Python\\Python312\\site-packages\\torch\\utils\\serialization\\config.py', reloading
+2026-03-11 15:36:38,567 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 15:36:52,330 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 15:36:52,331 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 15:36:52,334 [INFO] DSS-API:    Features: 21
+2026-03-11 15:36:52,456 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 15:36:52,471 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 15:50:16,473 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\AppData\\Roaming\\Python\\Python312\\site-packages\\torch\\__init__.py', reloading
+2026-03-11 15:50:17,559 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 15:50:32,821 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 15:50:32,826 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 15:50:32,829 [INFO] DSS-API:    Features: 21
+2026-03-11 15:50:32,884 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 15:50:32,898 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 16:18:46,385 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\AppData\\Roaming\\Python\\Python312\\site-packages\\matplotlib\\_mathtext.py', reloading
+2026-03-11 16:18:47,350 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 16:18:59,288 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 16:18:59,321 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 16:18:59,364 [INFO] DSS-API:    Features: 21
+2026-03-11 16:18:59,471 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 16:18:59,488 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 16:38:36,933 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\AppData\\Roaming\\Python\\Python312\\site-packages\\numpy\\_globals.py', reloading
+2026-03-11 16:38:37,562 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 16:38:46,669 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 16:38:46,670 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 16:38:46,670 [INFO] DSS-API:    Features: 21
+2026-03-11 16:38:46,708 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 16:38:46,720 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 16:38:53,336 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\AppData\\Roaming\\Python\\Python312\\site-packages\\shap\\__init__.py', reloading
+2026-03-11 16:38:54,230 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 16:39:09,746 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 16:39:09,836 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 16:39:09,893 [INFO] DSS-API:    Features: 21
+2026-03-11 16:39:10,346 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 16:39:10,363 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 16:39:22,744 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\AppData\\Roaming\\Python\\Python312\\site-packages\\torch\\nn\\init.py', reloading
+2026-03-11 16:39:24,771 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 16:39:39,451 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 16:39:39,455 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 16:39:39,457 [INFO] DSS-API:    Features: 21
+2026-03-11 16:39:39,553 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 16:39:39,587 [INFO] werkzeug:  * Debugger PIN: 419-262-495
+2026-03-11 16:39:41,598 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Takunda Mundwa\\AppData\\Roaming\\Python\\Python312\\site-packages\\numpy\\core\\multiarray.py', reloading
+2026-03-11 16:39:42,807 [INFO] werkzeug:  * Restarting with watchdog (windowsapi)
+2026-03-11 16:39:57,632 [INFO] DSS-API: Model artifacts loaded successfully.
+2026-03-11 16:39:57,633 [INFO] DSS-API:    Model type: BalancedRandomForestClassifier
+2026-03-11 16:39:57,633 [INFO] DSS-API:    Features: 21
+2026-03-11 16:39:57,680 [WARNING] werkzeug:  * Debugger is active!
+2026-03-11 16:39:57,691 [INFO] werkzeug:  * Debugger PIN: 419-262-495
