@@ -11,6 +11,15 @@
 # Methodology/design writeups in markdown
 Chapter_*.md
 
+# Non-code artifacts (keep repo code-focused)
+*.csv
+*.ipynb
+*.png
+*.jpg
+*.jpeg
+*.joblib
+*.log
+
 # Temporary Office lock files
 ~$*
 
