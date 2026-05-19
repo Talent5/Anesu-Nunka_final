@@ -19,7 +19,7 @@ function App() {
 
   // Check if already logged in (session cookie persists)
   useEffect(() => {
-    fetch(`${API_BASE}/auth/status`)
+    fetch(`${API_BASE}/auth/status`, { credentials: 'include' })
       .then(res => res.json())
       .then(data => {
         if (data.authenticated) setUser(data.user)
@@ -33,7 +33,10 @@ function App() {
   }, [])
 
   const handleLogout = useCallback(async () => {
-    await fetch(`${API_BASE}/auth/logout`, { method: 'POST' })
+    await fetch(`${API_BASE}/auth/logout`, {
+      method: 'POST',
+      credentials: 'include'
+    })
     setUser(null)
     setResult(null)
     setError(null)
@@ -49,6 +52,7 @@ function App() {
         patient_data: patientData
       }, {
         headers: { 'Content-Type': 'application/json' },
+        withCredentials: true,
         timeout: 15000
       })
 

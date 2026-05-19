@@ -44,7 +44,8 @@ def create_app(config_class=Config):
         r"/api/*": {
             "origins": config_class.CORS_ORIGINS,
             "methods": ["GET", "POST", "OPTIONS"],
-            "allow_headers": ["Content-Type", "Authorization"]
+            "allow_headers": ["Content-Type", "Authorization"],
+            "supports_credentials": True
         }
     })
     
