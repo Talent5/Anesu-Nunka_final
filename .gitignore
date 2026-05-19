@@ -17,7 +17,6 @@ Chapter_*.md
 *.png
 *.jpg
 *.jpeg
-*.joblib
 *.log
 
 # Temporary Office lock files
@@ -30,6 +29,9 @@ Chapter_*.md
 # Node artifacts
 frontend/node_modules/
 frontend/dist/
+
+# Prototype workspace (local-only)
+Prototype/
 
 # Local environment files
 .env
