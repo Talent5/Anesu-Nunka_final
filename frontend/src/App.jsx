@@ -8,7 +8,7 @@ import LoadingSpinner from './components/LoadingSpinner'
 import LoginPage from './components/LoginPage'
 import { ClipboardList, AlertCircle } from 'lucide-react'
 
-const API_BASE = '/api'
+const API_BASE = import.meta.env.VITE_API_BASE || '/api'
 
 function App() {
   const [user, setUser] = useState(null)
@@ -19,7 +19,7 @@ function App() {
 
   // Check if already logged in (session cookie persists)
   useEffect(() => {
-    fetch('/api/auth/status')
+    fetch(`${API_BASE}/auth/status`)
       .then(res => res.json())
       .then(data => {
         if (data.authenticated) setUser(data.user)
@@ -33,7 +33,7 @@ function App() {
   }, [])
 
   const handleLogout = useCallback(async () => {
-    await fetch('/api/auth/logout', { method: 'POST' })
+    await fetch(`${API_BASE}/auth/logout`, { method: 'POST' })
     setUser(null)
     setResult(null)
     setError(null)

@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Activity, LogIn, AlertCircle } from 'lucide-react'
 
+const API_BASE = import.meta.env.VITE_API_BASE || '/api'
+
 function LoginPage({ onLogin }) {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
@@ -13,7 +15,7 @@ function LoginPage({ onLogin }) {
     setLoading(true)
 
     try {
-      const res = await fetch('/api/auth/login', {
+      const res = await fetch(`${API_BASE}/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password })
