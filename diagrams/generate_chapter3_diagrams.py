@@ -113,12 +113,12 @@ def draw_crisp_dm():
     ax.text(-1.55, -1.75, "-->  Sequential flow           - ->  Iterative feedback loop",
             fontsize=7.5, color="#616161", style="italic")
 
-    fig.suptitle("Figure 3.1: CRISP-DM Methodology Lifecycle Adapted\n"
+    fig.suptitle("CRISP-DM Methodology Lifecycle Adapted\n"
                  "for Diabetes Risk Stratification", fontsize=11,
                  fontweight="bold", y=0.98)
     fig.savefig(os.path.join(OUT, "fig_3_1_crisp_dm.png"))
     plt.close(fig)
-    print("✓  Figure 3.1 saved")
+    print("  Figure 3.1 saved")
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -174,11 +174,11 @@ def draw_preprocessing_pipeline():
                 fontsize=6.5, color="#BF360C", style="italic",
                 arrowprops=dict(arrowstyle="->", color="#BF360C", lw=0.8))
 
-    fig.suptitle("Figure 3.2: Data Preprocessing and Transformation Pipeline",
+    fig.suptitle("Data Preprocessing and Transformation Pipeline",
                  fontsize=11, fontweight="bold", y=1.02)
     fig.savefig(os.path.join(OUT, "fig_3_2_preprocessing_pipeline.png"))
     plt.close(fig)
-    print("✓  Figure 3.2 saved")
+    print("  Figure 3.2 saved")
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -278,11 +278,11 @@ def draw_model_architecture():
                     arrowprops=dict(arrowstyle="-|>", color="#BDBDBD",
                                     lw=1.0, shrinkB=5))
 
-    fig.suptitle("Figure 3.3: Model Selection and Comparative Architecture",
+    fig.suptitle("Model Selection and Comparative Architecture",
                  fontsize=11, fontweight="bold", y=0.98)
     fig.savefig(os.path.join(OUT, "fig_3_3_model_architecture.png"))
     plt.close(fig)
-    print("✓  Figure 3.3 saved")
+    print("  Figure 3.3 saved")
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -385,11 +385,11 @@ def draw_evaluation_framework():
                 arrowprops=dict(arrowstyle="-", color="#616161", lw=1.0,
                                 connectionstyle="arc3,rad=0"))
 
-    fig.suptitle("Figure 3.4: Model Evaluation and Explainability Framework",
+    fig.suptitle("Model Evaluation and Explainability Framework",
                  fontsize=11, fontweight="bold", y=0.99)
     fig.savefig(os.path.join(OUT, "fig_3_4_evaluation_framework.png"))
     plt.close(fig)
-    print("✓  Figure 3.4 saved")
+    print("  Figure 3.4 saved")
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -522,11 +522,11 @@ def draw_system_architecture():
     ax.annotate("", xy=(2.7, 1.75), xytext=(3.8, 2.5),
                 arrowprops=dict(arrowstyle="-|>", color="#C62828", lw=1.4))
 
-    fig.suptitle("Figure 3.5: System Architecture — Clinical Decision-Support System (CDSS)",
+    fig.suptitle("System Architecture — Clinical Decision-Support System (CDSS)",
                  fontsize=11, fontweight="bold", y=0.99)
     fig.savefig(os.path.join(OUT, "fig_3_5_system_architecture.png"))
     plt.close(fig)
-    print("✓  Figure 3.5 saved")
+    print("  Figure 3.5 saved")
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -611,12 +611,12 @@ def draw_research_pipeline():
                 bbox=dict(boxstyle="round,pad=0.15", fc="#ECEFF1",
                           ec="#90A4AE", lw=0.6))
 
-    fig.suptitle("Figure 3.6: End-to-End Research Methodology Pipeline\n"
+    fig.suptitle("End-to-End Research Methodology Pipeline\n"
                  "Mapped to Research Objectives and Questions",
                  fontsize=11, fontweight="bold", y=1.02)
     fig.savefig(os.path.join(OUT, "fig_3_6_research_pipeline.png"))
     plt.close(fig)
-    print("✓  Figure 3.6 saved")
+    print("  Figure 3.6 saved")
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -668,12 +668,12 @@ def draw_smote_illustration():
         a.spines["right"].set_visible(False)
         a.tick_params(axis="both", labelsize=7.5)
 
-    fig.suptitle("Figure 3.7: Effect of SMOTE Oversampling on Class Distribution",
+    fig.suptitle("Effect of SMOTE Oversampling on Class Distribution",
                  fontsize=11, fontweight="bold", y=1.03)
     fig.tight_layout()
     fig.savefig(os.path.join(OUT, "fig_3_7_smote_balancing.png"))
     plt.close(fig)
-    print("✓  Figure 3.7 saved")
+    print("  Figure 3.7 saved")
 
 
 # ═══════════════════════════════════════════════════════════════════════════

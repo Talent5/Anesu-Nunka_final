@@ -194,7 +194,7 @@ def draw_conceptual_framework():
         ax.text(x, y, txt, ha="center", va="center", fontsize=6.5,
                 fontweight="bold", color=col)
 
-    fig.suptitle("Figure 4.1: High-Level Conceptual Framework of the Explainable\n"
+    fig.suptitle("High-Level Conceptual Framework of the Explainable\n"
                  "Diabetes Risk Stratification System",
                  fontsize=11, fontweight="bold", y=1.01)
     fig.savefig(os.path.join(OUT, "fig_4_1_conceptual_framework.png"))
@@ -334,7 +334,7 @@ def draw_data_pipeline():
             ha="center", fontsize=6, color="#78909C", style="italic",
             bbox=dict(boxstyle="round,pad=0.1", fc="#ECEFF1", ec="#B0BEC5", lw=0.5))
 
-    fig.suptitle("Figure 4.2: Detailed Data Pipeline Process Design",
+    fig.suptitle("Detailed Data Pipeline Process Design",
                  fontsize=11, fontweight="bold", y=1.01)
     fig.savefig(os.path.join(OUT, "fig_4_2_data_pipeline.png"))
     plt.close(fig)
@@ -444,7 +444,7 @@ def draw_brf_architecture():
     for i, adv in enumerate(advantages):
         ax.text(11.8, 5.45 - i * 0.3, f"- {adv}", fontsize=6, color="#616161")
 
-    fig.suptitle("Figure 4.3: Internal Architecture of the Balanced Random Forest Classifier",
+    fig.suptitle("Internal Architecture of the Balanced Random Forest Classifier",
                  fontsize=11, fontweight="bold", y=0.99)
     fig.savefig(os.path.join(OUT, "fig_4_3_brf_architecture.png"))
     plt.close(fig)
@@ -574,7 +574,7 @@ def draw_xai_architecture():
                     arrowprops=dict(arrowstyle="-|>", color="#CE93D8", lw=0.8,
                                     shrinkB=3))
 
-    fig.suptitle("Figure 4.4: XAI Integration Architecture — SHAP and LIME Explanation Pipeline",
+    fig.suptitle("XAI Integration Architecture — SHAP and LIME Explanation Pipeline",
                  fontsize=11, fontweight="bold", y=1.01)
     fig.savefig(os.path.join(OUT, "fig_4_4_xai_architecture.png"))
     plt.close(fig)
@@ -712,7 +712,7 @@ def draw_ui_wireframe():
         else:
             ax.text(10.3, y, imp, fontsize=5.5, fontweight=weight, color=color)
 
-    fig.suptitle("Figure 4.5: Clinical Decision-Support System — UI Wireframe Design",
+    fig.suptitle("Clinical Decision-Support System — UI Wireframe Design",
                  fontsize=11, fontweight="bold", y=0.99)
     fig.savefig(os.path.join(OUT, "fig_4_5_ui_wireframe.png"))
     plt.close(fig)
@@ -777,7 +777,7 @@ def draw_interaction_sequence():
             ax.text(mid_x, y + offset, label, ha="center", fontsize=5.5,
                     color=color)
 
-    fig.suptitle("Figure 4.6: Request-Response Interaction Sequence Diagram",
+    fig.suptitle("Request-Response Interaction Sequence Diagram",
                  fontsize=11, fontweight="bold", y=0.99)
     fig.savefig(os.path.join(OUT, "fig_4_6_interaction_sequence.png"))
     plt.close(fig)
@@ -888,7 +888,7 @@ def draw_risk_stratification_logic():
             fontsize=6.5, color="#37474F", va="top",
             bbox=dict(boxstyle="round,pad=0.2", fc="#ECEFF1", ec="#90A4AE", lw=0.8))
 
-    fig.suptitle("Figure 4.7: Multi-Tier Risk Stratification Decision Logic",
+    fig.suptitle("Multi-Tier Risk Stratification Decision Logic",
                  fontsize=11, fontweight="bold", y=0.99)
     fig.savefig(os.path.join(OUT, "fig_4_7_risk_stratification_logic.png"))
     plt.close(fig)
