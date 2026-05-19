@@ -23,7 +23,6 @@ from functools import wraps
 import numpy as np
 import pandas as pd
 import joblib
-import shap
 from flask import Flask, request, jsonify, session
 from flask_cors import CORS
 
@@ -61,30 +60,41 @@ def create_app(config_class=Config):
     logger = logging.getLogger('DSS-API')
     
     # ─────────────────────────────────────────────────────────
-    # Load Model Artifacts
+    # Model Artifacts
     # ─────────────────────────────────────────────────────────
-    
-    try:
-        model = joblib.load(config_class.MODEL_PATH)
-        scaler = joblib.load(config_class.SCALER_PATH)
-        feature_names = joblib.load(config_class.FEATURES_PATH)
-        
-        # Initialize SHAP explainer
-        shap_explainer = shap.TreeExplainer(model)
-        
-        logger.info("Model artifacts loaded successfully.")
-        logger.info(f"   Model type: {type(model).__name__}")
-        logger.info(f"   Features: {len(feature_names)}")
-        model_loaded = True
-    except FileNotFoundError as e:
-        logger.error(f"Model artifact not found: {e}")
-        logger.error("   Run the prototype notebook first to generate model artifacts.")
-        model_loaded = False
+    model = scaler = feature_names = shap_explainer = None
+    model_loaded = False
+    model_load_error = None
+
+    def load_model_artifacts():
+        """Load model artifacts lazily so production servers can bind their port quickly."""
+        nonlocal model, scaler, feature_names, shap_explainer, model_loaded, model_load_error
+
+        if model_loaded:
+            return True
+
+        try:
+            model = joblib.load(config_class.MODEL_PATH)
+            scaler = joblib.load(config_class.SCALER_PATH)
+            feature_names = joblib.load(config_class.FEATURES_PATH)
+
+            logger.info("Model artifacts loaded successfully.")
+            logger.info(f"   Model type: {type(model).__name__}")
+            logger.info(f"   Features: {len(feature_names)}")
+            model_loaded = True
+            model_load_error = None
+            return True
+        except FileNotFoundError as e:
+            logger.error(f"Model artifact not found: {e}")
+            logger.error("   Run the prototype notebook first to generate model artifacts.")
+            model_load_error = str(e)
+        except Exception as e:
+            logger.error(f"Error loading model: {e}")
+            model_load_error = str(e)
+
         model = scaler = feature_names = shap_explainer = None
-    except Exception as e:
-        logger.error(f"Error loading model: {e}")
         model_loaded = False
-        model = scaler = feature_names = shap_explainer = None
+        return False
 
     # ─────────────────────────────────────────────────────────
     # Utility Functions
@@ -144,6 +154,12 @@ def create_app(config_class=Config):
     def get_shap_explanations(input_scaled, risk_tier, top_n=10):
         """Generate SHAP feature contributions for a single prediction."""
         try:
+            nonlocal shap_explainer
+
+            if shap_explainer is None:
+                import shap
+                shap_explainer = shap.TreeExplainer(model)
+
             shap_values = shap_explainer.shap_values(input_scaled)
             
             # Handle both old (list of 2D arrays) and new (3D array) formats
@@ -189,10 +205,11 @@ def create_app(config_class=Config):
         """Decorator to check if model is loaded before processing."""
         @wraps(f)
         def decorated(*args, **kwargs):
-            if not model_loaded:
+            if not load_model_artifacts():
                 return jsonify({
                     'success': False,
                     'error': 'Model not loaded. Please run the prototype notebook to generate model artifacts.',
+                    'details': model_load_error,
                     'code': 'MODEL_NOT_LOADED'
                 }), 503
             return f(*args, **kwargs)
