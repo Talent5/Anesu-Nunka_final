@@ -1,0 +1,12 @@
+.git
+.venv
+__pycache__
+*.pyc
+*.log
+frontend/node_modules
+frontend/dist
+Prototype
+diagrams
+*.docx
+*.pdf
+*.csv

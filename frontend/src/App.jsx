@@ -53,7 +53,7 @@ function App() {
       }, {
         headers: { 'Content-Type': 'application/json' },
         withCredentials: true,
-        timeout: 15000
+        timeout: 120000
       })
 
       if (response.data.success) {
@@ -74,9 +74,9 @@ function App() {
           setError(data.error || `Server error (${err.response.status})`)
         }
       } else if (err.code === 'ECONNABORTED') {
-        setError('Request timed out. Please ensure the backend server is running.')
+        setError('Request timed out. The backend may still be warming up; please try again.')
       } else {
-        setError('Unable to connect to the prediction server. Please ensure the backend is running on port 5000.')
+        setError('Unable to connect to the prediction server. Please check the backend URL.')
       }
     } finally {
       setLoading(false)
