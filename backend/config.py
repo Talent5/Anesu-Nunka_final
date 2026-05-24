@@ -16,7 +16,10 @@ class Config:
     SESSION_COOKIE_HTTPONLY = True
     
     # CORS
-    CORS_ORIGINS = os.environ.get('CORS_ORIGINS', 'http://localhost:5173').split(',')
+    CORS_ORIGINS = os.environ.get(
+        'CORS_ORIGINS',
+        'http://localhost:5173,https://diabetesrisk.talentmundwa5.workers.dev'
+    ).split(',')
     
     # Model paths
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
