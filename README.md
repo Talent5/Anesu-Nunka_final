@@ -1,5 +1,5 @@
 ---
-title: Diabetes Risk Backend
+title: Diabetes Risk Stratification
 emoji: D
 colorFrom: blue
 colorTo: green
